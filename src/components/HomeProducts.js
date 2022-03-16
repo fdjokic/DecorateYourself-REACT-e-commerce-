@@ -9,15 +9,22 @@ const HomeProducts = () => {
     return <Loading />;
   }
   return (
-    <div className="products">
-      {products.slice(0, 3).map((product) => {
-        return (
-          <Link to={`/product/${product.id}`} className="link" key={product.id}>
-            <img src={product.image} alt={product.title} />
-          </Link>
-        );
-      })}
-    </div>
+    <>
+      <h2 style={{ textAlign: "center", margin: "2rem" }}>Dress Up</h2>
+      <div className="products">
+        {products.slice(0, 3).map((product) => {
+          return (
+            <Link
+              to={`/product/${product.id}`}
+              className="link"
+              key={product.id}
+            >
+              <img src={product.image} alt={product.title} />
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

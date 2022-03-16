@@ -6,9 +6,7 @@
 .loading {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
-  width: 100vw;
-  max-width: 100%;
+  width: 20vw;
   height: 100vh;
 }
 .lds-ripple {

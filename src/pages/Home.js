@@ -41,7 +41,6 @@ const Home = () => {
       </div>
 
       <div className="slider-products">
-        <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Dress Up</h2>
         <HomeProducts />
         <Link to="/products" className="check-btn">
           check it out
