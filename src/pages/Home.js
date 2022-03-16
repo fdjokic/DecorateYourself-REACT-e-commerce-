@@ -14,33 +14,32 @@ const Home = () => {
   };
   return (
     <Wrapper>
-      <div className="container">
-        <div className="img-container">
-          <img
-            src={process.env.PUBLIC_URL + `/assets/hero${index}.jpg`}
-            alt="hero-img"
-          />
-          <div className="img-circles">
-            {imgs.map((img, idx) => {
-              return (
-                <BiCircle
-                  key={idx}
-                  onClick={() => handleImgs(idx)}
-                  className={idx + 1 === index ? "circle-active" : null}
-                  style={{ cursor: "pointer" }}
-                />
-              );
-            })}
-            <div className="text-and-button">
-              <h2>Create Your Style of Life!</h2>
-              <p>Show Us Your True Self</p>
-              <Link to="/products" className="shop-btn">
-                Shop Now
-              </Link>
-            </div>
+      <div className="img-container">
+        <img
+          src={process.env.PUBLIC_URL + `/assets/hero${index}.jpg`}
+          alt="hero-img"
+        />
+        <div className="img-circles">
+          {imgs.map((img, idx) => {
+            return (
+              <BiCircle
+                key={idx}
+                onClick={() => handleImgs(idx)}
+                className={idx + 1 === index ? "circle-active" : null}
+                style={{ cursor: "pointer" }}
+              />
+            );
+          })}
+          <div className="text-and-button">
+            <h2>Create Your Style of Life!</h2>
+            <p>Show Us Your True Self</p>
+            <Link to="/products" className="shop-btn">
+              Shop Now
+            </Link>
           </div>
         </div>
       </div>
+
       <div className="slider-products">
         <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Dress Up</h2>
         <HomeProducts />
@@ -79,8 +78,8 @@ const Wrapper = styled.div`
       z-index: 1;
       object-fit: cover;
       width: 100vw;
-      height: 80vh;
       max-width: 100%;
+      height: 80vh;
     }
   }
   .img-circles {
@@ -171,6 +170,7 @@ const Wrapper = styled.div`
     color: khaki;
   }
   .services {
+    max-width: 90%;
     width: 90vw;
     display: flex;
     justify-content: center;
@@ -205,6 +205,11 @@ const Wrapper = styled.div`
   }
   .service-text {
     text-align: center;
+  }
+  @media only screen and (max-width: 668px) {
+    .img-circles {
+      left: 40%;
+    }
   }
 `;
 export default Home;

@@ -5,8 +5,7 @@ import { useCartContext } from "../context/cartContext";
 import { AiOutlineDelete } from "react-icons/ai";
 
 const Cart = () => {
-  const { cart, removeItem, total_items, total_amount, shipping_fee } =
-    useCartContext();
+  const { cart, removeItem, total_amount, shipping_fee } = useCartContext();
   return (
     <Wrapper>
       {cart.length < 1 ? (
