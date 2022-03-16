@@ -65,9 +65,7 @@ const Home = () => {
 const Wrapper = styled.div`
   width: 100vw;
   max-width: 100%;
-  .container {
-    display: flex;
-  }
+
   .img-container {
     width: 100vw;
     max-width: 100%;
@@ -147,7 +145,6 @@ const Wrapper = styled.div`
     bottom: 550%;
     left: -120%;
     width: 20rem;
-
     display: flex;
     justify-content: center;
     align-items: center;

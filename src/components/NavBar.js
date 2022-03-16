@@ -81,8 +81,8 @@ const Wrapper = styled.nav`
     background-color: black;
   }
   .nav-text {
-    padding: 0.8rem;
     display: flex;
+    height: 4rem;
     justify-content: space-around;
     align-items: center;
   }
