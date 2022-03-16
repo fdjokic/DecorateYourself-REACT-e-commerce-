@@ -140,7 +140,7 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 1200px) {
     .items {
-      width: 90%;
+      width: 100%;
       height: 50%;
       margin-right: 2rem;
       font-size: 0.8rem;
