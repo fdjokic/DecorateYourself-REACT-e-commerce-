@@ -62,6 +62,7 @@ const Wrapper = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
+      height: 100vh;
       z-index: -1;
       background: white;
       transform: translate(-100%);
@@ -95,8 +96,7 @@ const Wrapper = styled.div`
       margin-left: 3rem;
       transition: 0.2s;
     }
-    .icons {
-    }
+
     .icon {
       margin: 2rem 1rem;
       cursor: pointer;
