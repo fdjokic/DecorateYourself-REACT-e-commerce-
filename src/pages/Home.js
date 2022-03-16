@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { services } from "../constants/constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -8,6 +8,20 @@ import { BiCircle } from "react-icons/bi";
 const Home = () => {
   const [index, setIndex] = useState(1);
   const imgs = [1, 2, 3];
+  console.log(index);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIndex((oldIndex) => {
+        if (oldIndex === imgs.length) {
+          setIndex(1);
+        }
+        return oldIndex + 1;
+      });
+    }, 7000);
+
+    return () => clearTimeout(timeout);
+  }, [index]);
 
   const handleImgs = (index) => {
     setIndex(index + 1);
