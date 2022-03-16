@@ -2,14 +2,12 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="flex-loading">
-      <article className="loading">
-        <div className="lds-ripple">
-          <div></div>
-          <div></div>
-        </div>
-      </article>
-    </div>
+    <article className="loading">
+      <div className="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </article>
   );
 };
 
