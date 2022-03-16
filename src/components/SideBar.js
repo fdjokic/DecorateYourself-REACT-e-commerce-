@@ -66,14 +66,14 @@ const Wrapper = styled.div`
       z-index: -1;
       background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
       color: white;
-      transform: translate(-100%);
+      transform: translateY(-100%);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: 0.8s;
     }
     .active {
-      transform: translate(0);
+      transform: translateY(0);
       z-index: 999;
       transition: 0.8s;
     }
@@ -97,6 +97,7 @@ const Wrapper = styled.div`
       color: white;
     }
     .link:hover {
+      margin-left: 3rem;
       transition: 0.2s;
     }
 
