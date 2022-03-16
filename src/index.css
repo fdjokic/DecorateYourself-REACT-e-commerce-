@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: flex-start;
   width: 100vw;
-  height: 100vh;
 }
 .lds-ripple {
   display: inline-block;
@@ -30,8 +29,8 @@
 }
 @keyframes lds-ripple {
   0% {
-    top: 100px;
-    left: 100px;
+    top: 80px;
+    left: 80px;
     width: 0;
     height: 0;
     opacity: 1;
@@ -39,8 +38,8 @@
   100% {
     top: 0px;
     left: 0px;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     opacity: 0;
   }
 }

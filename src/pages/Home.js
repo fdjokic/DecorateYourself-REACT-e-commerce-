@@ -148,9 +148,7 @@ const Wrapper = styled.div`
   }
   .text-and-button {
     color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     position: absolute;
     bottom: 550%;
     left: -120%;
