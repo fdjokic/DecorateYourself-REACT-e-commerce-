@@ -136,7 +136,6 @@ const Wrapper = styled.div`
     }
   }
   .text-and-button {
-    z-index: 2;
     color: red;
     display: flex;
     align-items: center;
