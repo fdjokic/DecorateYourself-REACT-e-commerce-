@@ -60,16 +60,15 @@ const Wrapper = styled.div`
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      height: 100vh;
-      z-index: -1;
-      background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-      color: white;
-      transform: translateY(-100%);
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+      background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+      color: white;
+      transform: translateY(100%);
       transition: 0.8s;
     }
     .active {
@@ -88,7 +87,6 @@ const Wrapper = styled.div`
       flex-direction: column;
       align-items: center;
       gap: 2.5rem;
-      width: 70vw;
     }
     .link {
       text-decoration: none;
@@ -112,8 +110,6 @@ const Wrapper = styled.div`
       transition: 0.5s;
     }
     .exit {
-      position: absolute;
-      top: 10%;
       cursor: pointer;
       transition: 0.5s;
       color: white;
