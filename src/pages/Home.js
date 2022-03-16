@@ -90,7 +90,7 @@ const Wrapper = styled.div`
   }
   .circle-active {
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
   }
   .slider-products {
     margin: 3rem;
