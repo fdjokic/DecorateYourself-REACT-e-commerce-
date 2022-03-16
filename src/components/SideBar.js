@@ -64,36 +64,40 @@ const Wrapper = styled.div`
       height: 50%;
       height: 100vh;
       z-index: -1;
-      background: white;
+      background: black;
+      color: white;
       transform: translate(-100%);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       transition: 0.8s;
+      border-radius: 10px;
     }
     .active {
       transform: translate(0);
       z-index: 999;
       transition: 0.8s;
     }
+    h5 {
+      font-size: 1.3rem;
+      color: white;
+    }
     .sidebar-content {
       text-decoration: none;
-      font-size: 1.5rem;
-      color: black;
+      font-size: 2.3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem;
+      gap: 2.5rem;
       width: 70vw;
     }
     .link {
       text-decoration: none;
       text-transform: capitalize;
-      color: black;
       transition: 0.2s;
+      color: white;
     }
     .link:hover {
-      margin-left: 3rem;
       transition: 0.2s;
     }
 
@@ -101,6 +105,7 @@ const Wrapper = styled.div`
       margin: 2rem 1rem;
       cursor: pointer;
       transition: 0.5s;
+      color: white;
     }
     .icon:hover {
       transform: scale(1.2);
@@ -111,7 +116,7 @@ const Wrapper = styled.div`
       top: 10%;
       cursor: pointer;
       transition: 0.5s;
-      color: black;
+      color: white;
     }
     .exit:hover {
       transform: rotate(180deg);
