@@ -69,11 +69,9 @@ const Wrapper = styled.div`
   .img-container {
     width: 100vw;
     max-width: 100%;
-    z-index: 1;
     height: 80vh;
     overflow: hidden;
     img {
-      z-index: 1;
       object-fit: cover;
       width: 100vw;
       max-width: 100%;
