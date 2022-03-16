@@ -4,8 +4,10 @@ import Loading from "./Loading";
 import { useGlobalContext } from "../context/context";
 
 const HomeProducts = () => {
-  const { products } = useGlobalContext();
-
+  const { products, product_loading: loading } = useGlobalContext();
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <>
       <h2 style={{ textAlign: "center", margin: "2rem" }}>Dress Up</h2>
