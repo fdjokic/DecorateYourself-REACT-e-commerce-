@@ -58,7 +58,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 992px) {
     .sidebar {
       position: fixed;
-      top: 0;
+      top: 9.5%;
       left: 0;
       width: 50%;
       height: 50%;
@@ -71,7 +71,6 @@ const Wrapper = styled.div`
       align-items: center;
       justify-content: center;
       transition: 0.8s;
-      border-radius: 10px;
     }
     .active {
       transform: translate(0);
