@@ -110,6 +110,8 @@ const Wrapper = styled.div`
       transition: 0.5s;
     }
     .exit {
+      position: absolute;
+      top: 10%;
       cursor: pointer;
       transition: 0.5s;
       color: white;
