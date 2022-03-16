@@ -119,7 +119,6 @@ const Wrapper = styled.nav`
   }
   @media only screen and (max-width: 992px) {
     .nav-text {
-      padding: 0.5srem;
       justify-content: space-around;
       width: 100%;
     }
@@ -130,6 +129,7 @@ const Wrapper = styled.nav`
       font-size: 1.3rem;
     }
     .icon {
+      font-size: 1.3rem;
       margin-right: 1rem;
     }
     .svg {

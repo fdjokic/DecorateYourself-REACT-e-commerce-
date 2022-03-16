@@ -60,8 +60,8 @@ const Wrapper = styled.div`
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 50%;
+      height: 50%;
       height: 100vh;
       z-index: -1;
       background: white;
@@ -78,7 +78,7 @@ const Wrapper = styled.div`
     }
     .sidebar-content {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: black;
       display: flex;
       flex-direction: column;
@@ -108,8 +108,7 @@ const Wrapper = styled.div`
     }
     .exit {
       position: absolute;
-      right: 5%;
-      top: 3%;
+      top: 10%;
       cursor: pointer;
       transition: 0.5s;
       color: black;
