@@ -55,6 +55,9 @@ const Wrapper = styled.nav`
   background: transparent;
   margin: 0 auto;
   position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   background-color: white;
   z-index: 2;
@@ -83,6 +86,7 @@ const Wrapper = styled.nav`
   .nav-text {
     display: flex;
     height: 4rem;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
   }
@@ -112,6 +116,7 @@ const Wrapper = styled.nav`
     display: none;
     width: 2rem;
     height: 2rem;
+    margin-right: 1rem;
     cursor: pointer;
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -130,7 +135,7 @@ const Wrapper = styled.nav`
     }
     .icon {
       font-size: 1.3rem;
-      margin-right: 1rem;
+      margin-right: 0.6rem;
     }
     .svg {
       display: block;
