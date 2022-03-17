@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const PageHero = ({ title, product }) => {
+const PageHero = ({ title = "", product }) => {
   return (
     <Wrapper>
       <div>
         <h3>
-          <Link to="/" className="link">
+          <Link to="/" className="link-style">
             Home
           </Link>{" "}
           {product && (
-            <Link to="/products" className="link">
+            <Link to="/products" className="link-style">
               / Products
             </Link>
           )}{" "}
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   font-size: 1.5rem;
   color: white;
-  .link {
+  .link-style {
     text-decoration: none;
     color: khaki;
   }

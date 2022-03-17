@@ -50,7 +50,7 @@ export const AppProvider = ({ children }) => {
   const fetchSingleProduct = async (url) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
     const data = await axios(url);
-    console.log(data.data);
+
     const singleProduct = data.data;
     dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
   };
