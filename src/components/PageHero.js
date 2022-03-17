@@ -12,10 +12,10 @@ const PageHero = ({ title, product }) => {
           </Link>{" "}
           {product && (
             <Link to="/products" className="link">
-              /Products
+              / Products
             </Link>
           )}{" "}
-          /{title.slice(0, 10)}
+          / {title.slice(0, 10)}
           {title.length > 10 && <span> ...</span>}
         </h3>
       </div>
