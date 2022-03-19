@@ -8,6 +8,7 @@ import Loading from "../components/Loading";
 import { useFilterContext } from "../context/filterContext";
 import { motion, LazyMotion, domAnimation } from "framer-motion";
 import PageHero from "../components/PageHero";
+import { GiClick } from "react-icons/gi";
 
 const productsVariants = {
   initial: { opacity: 0 },
@@ -45,6 +46,7 @@ const Products = () => {
               const { id } = product;
               return (
                 <Link to={`/product/${id}`} className="link" key={id}>
+                  <GiClick className="click-hover" />
                   <Product key={id} product={product} />
                 </Link>
               );
@@ -56,8 +58,8 @@ const Products = () => {
   );
 };
 const Wrapper = styled.div`
+  margin-bottom: 5rem;
   .filters-products {
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
 
@@ -74,6 +76,36 @@ const Wrapper = styled.div`
   .link {
     text-decoration: none;
     color: black;
+    position: relative;
+    transition: 0.3s;
+  }
+  .link:hover .click-hover {
+    opacity: 1;
+    transition: 0.3s;
+    z-index: 50;
+  }
+
+  .click-hover {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: black;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .link:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+    opacity: 0.8;
   }
 `;
 export default Products;

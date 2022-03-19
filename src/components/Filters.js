@@ -86,6 +86,7 @@ const Wrapper = styled.div`
   height: 30rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   div {
     display: flex;
     flex-direction: column;
@@ -98,7 +99,7 @@ const Wrapper = styled.div`
     width: 20rem;
   }
   .clear-filters {
-    background-color: #800000;
+    background-color: black;
     padding: 0.3rem;
     border: none;
     color: white;
@@ -115,6 +116,13 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 840px) {
     form {
       position: relative;
+    }
+  }
+  @media only screen and (max-width: 653px) {
+    form {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
     }
   }
 `;

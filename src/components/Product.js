@@ -1,5 +1,4 @@
 import React from "react";
-import { useGlobalContext } from "../context/context";
 import styled from "styled-components";
 const Product = ({ product }) => {
   const {
@@ -21,19 +20,13 @@ const Product = ({ product }) => {
           <h6>{category}</h6>
           <p>${price}</p>
         </div>
-        <div className="desc">{description.slice(0, 60)}...</div>
       </article>
     </Wrapper>
   );
 };
 const Wrapper = styled.div`
   article {
-    border: 3px solid transparent;
     border-radius: 15px;
-
-    border-image: linear-gradient(grey, #414a4c, black);
-
-    border-image-slice: 1;
 
     display: flex;
     flex-direction: column;
@@ -53,11 +46,11 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 8.5rem;
+    height: 13.5rem;
     border-bottom: 2px solid black;
   }
   img {
-    height: 6rem;
+    height: 11rem;
     object-fit: contain;
     width: 6rem;
   }
@@ -80,10 +73,6 @@ const Wrapper = styled.div`
   }
   .desc {
     font-size: 0.7rem;
-  }
-  article:hover {
-    transform: scale(0.9);
-    transition: 0.4s;
   }
 `;
 export default Product;
