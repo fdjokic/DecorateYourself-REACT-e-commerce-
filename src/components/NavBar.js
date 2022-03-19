@@ -33,7 +33,6 @@ const NavBar = () => {
         </svg>
         <Link to="/" className="heading-2">
           <h2>Decorate Yourself</h2>
-          <div className="underline"></div>
         </Link>
         <div>
           <BiUserPlus className="icon" />
@@ -67,12 +66,7 @@ const Wrapper = styled.nav`
     color: black;
     text-decoration: none;
   }
-  .underline {
-    width: 70%;
-    margin: 0 auto;
-    background-color: black;
-    border: 1px solid black;
-  }
+
   .amount {
     position: absolute;
     top: -20%;
