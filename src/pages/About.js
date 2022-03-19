@@ -66,14 +66,14 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
     section {
       font-size: 73%;
-      height: 30%;
+      height: 25%;
       top: 70%;
     }
   }
   @media only screen and (max-width: 700px) {
     section {
       font-size: 70%;
-      height: 30%;
+      height: 25%;
       width: 60%;
       top: 70%;
     }
@@ -96,6 +96,22 @@ const Wrapper = styled.div`
         width: 60%;
         height: 20%;
       }
+    }
+  }
+  @media only screen and (max-height: 560px) {
+    section {
+      height: 30%;
+    }
+  }
+  @media only screen and (max-height: 300px) {
+    section {
+      height: 35%;
+    }
+  }
+  @media only screen and (max-height: 280px) {
+    section {
+      height: 40%;
+      top: 65%;
     }
   }
 `;
