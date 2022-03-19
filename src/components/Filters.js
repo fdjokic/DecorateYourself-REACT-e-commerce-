@@ -19,10 +19,11 @@ const Filters = () => {
   return (
     <Wrapper>
       <form onSubmit={handleSubmit}>
-        <h4>Filters</h4>
+        <h3>Filters</h3>
         <div className="text">
           <input
             type="text"
+            className="text-input"
             onChange={updateFilters}
             name="text"
             value={text}
@@ -30,23 +31,21 @@ const Filters = () => {
           />
         </div>
         <div className="categories">
-          <label htmlFor="category">
-            Categories
-            <select
-              name="category"
-              id="category"
-              value={category}
-              onChange={updateFilters}
-            >
-              {categories.map((category, index) => {
-                return (
-                  <option value={category} key={index}>
-                    {category}
-                  </option>
-                );
-              })}
-            </select>
-          </label>
+          <label htmlFor="category">Categories</label>
+          <select
+            name="category"
+            id="category"
+            value={category}
+            onChange={updateFilters}
+          >
+            {categories.map((category, index) => {
+              return (
+                <option value={category} key={index}>
+                  {category}
+                </option>
+              );
+            })}
+          </select>
         </div>
         <div className="sorting">
           <label htmlFor="sort">Sort</label>
@@ -83,14 +82,40 @@ const Filters = () => {
   );
 };
 const Wrapper = styled.div`
-  width: 15vw;
-  border: 2px solid black;
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    width: 20rem;
+  }
   .clear-filters {
     background-color: #800000;
     padding: 0.3rem;
     border: none;
     color: white;
     border-radius: 5px;
+  }
+  .text-input {
+    border-radius: 15px;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: 2px solid grey;
+    outline: none;
+  }
+  @media only screen and (max-width: 840px) {
+    form {
+      position: relative;
+    }
   }
 `;
 export default Filters;

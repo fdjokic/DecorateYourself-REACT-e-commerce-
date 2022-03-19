@@ -59,6 +59,8 @@ const Wrapper = styled.div`
   .filters-products {
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-around;
   }
   .products {
