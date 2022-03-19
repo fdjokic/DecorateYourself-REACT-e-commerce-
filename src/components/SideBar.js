@@ -69,12 +69,12 @@ const Wrapper = styled.div`
       background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
       color: white;
       transform: translateY(-100%);
-      transition: 0.3s;
+      transition: 0.5s;
     }
     .active {
       transform: translateY(0);
       z-index: 999;
-      transition: 0.3s;
+      transition: 0.5s;
     }
     h5 {
       font-size: 1.3rem;
