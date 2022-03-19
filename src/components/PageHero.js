@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   min-height: 5vh;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
   .link-style {
     text-decoration: none;
