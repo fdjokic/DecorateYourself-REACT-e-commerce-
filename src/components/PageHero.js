@@ -29,10 +29,10 @@ const Wrapper = styled.div`
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-height: 8vh;
+  min-height: 5vh;
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   color: white;
   .link-style {
     text-decoration: none;

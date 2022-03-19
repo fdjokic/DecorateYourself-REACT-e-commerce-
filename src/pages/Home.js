@@ -45,8 +45,10 @@ const Home = () => {
             );
           })}
           <div className="text-and-button">
-            <h2>Create Your Style of Life!</h2>
-            <p>Show Us Your True Self</p>
+            <div className="text-grey">
+              <h2>Create Your Style of Life!</h2>
+              <p>Show Us Your True Self</p>
+            </div>
             <Link to="/products" className="shop-btn">
               Shop Now
             </Link>
@@ -90,6 +92,14 @@ const Wrapper = styled.div`
       max-width: 100%;
       height: 80vh;
     }
+  }
+  .text-grey {
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
   }
   .img-circles {
     position: absolute;
@@ -157,9 +167,6 @@ const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     font-size: 1rem;
-    p {
-      font-weight: bold;
-    }
   }
 
   .shop-btn {

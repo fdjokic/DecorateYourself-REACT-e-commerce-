@@ -103,7 +103,7 @@ const Wrapper = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     position: fixed;
     width: 20rem;
     background-color: rgba(0, 0, 0, 0.8);
@@ -111,6 +111,7 @@ const Wrapper = styled.div`
     border-radius: 15px;
   }
   .clear-filters {
+    cursor: pointer;
     padding: 0.3rem;
     border: none;
     color: black;

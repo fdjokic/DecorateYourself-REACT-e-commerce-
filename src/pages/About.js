@@ -34,16 +34,15 @@ const Wrapper = styled.div`
   background-size: cover;
   section {
     z-index: 1;
-    border: 2px solid white;
     position: absolute;
     background-size: cover;
     top: 60%;
     height: 25%;
-    padding: 1.2rem;
+    padding: 1.3rem;
     width: 40%;
     left: 40%;
-    background-color: black;
     color: white;
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
