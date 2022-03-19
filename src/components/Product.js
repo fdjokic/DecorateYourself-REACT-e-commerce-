@@ -46,13 +46,13 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 13.5rem;
+    height: 14.5rem;
     border-bottom: 2px solid black;
   }
   img {
     height: 11rem;
     object-fit: contain;
-    width: 6rem;
+    width: 8rem;
   }
   .bottom-part {
     width: 10rem;

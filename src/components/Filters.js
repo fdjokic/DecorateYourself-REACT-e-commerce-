@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { getUniqueValue } from "../helpers/helpers";
 import { useGlobalContext } from "../context/context";
 import { useFilterContext } from "../context/filterContext";
+import { GoSettings } from "react-icons/go";
 
 const Filters = () => {
   const { products } = useGlobalContext();
@@ -14,12 +15,13 @@ const Filters = () => {
   } = useFilterContext();
 
   const categories = getUniqueValue(products, "category");
-  console.log(price);
 
   return (
     <Wrapper>
       <form onSubmit={handleSubmit}>
-        <h3>Filters</h3>
+        <h3>
+          Filters <GoSettings className="icon" />
+        </h3>
         <div className="text">
           <input
             type="text"
@@ -90,6 +92,11 @@ const Wrapper = styled.div`
   div {
     display: flex;
     flex-direction: column;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   form {
     display: flex;
