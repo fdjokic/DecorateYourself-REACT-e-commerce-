@@ -74,6 +74,7 @@ const Wrapper = styled.div`
     section {
       font-size: 70%;
       height: 25%;
+      padding: 0.4rem;
       width: 60%;
       top: 70%;
     }
