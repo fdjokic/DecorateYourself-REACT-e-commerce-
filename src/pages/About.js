@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     top: 60%;
     height: 25%;
     padding: 1.3rem;
-    width: 40%;
+    width: 50%;
     left: 40%;
     color: white;
     background: rgba(0, 0, 0, 0.7);
@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 1200px) {
     section {
       font-size: 90%;
-      height: 25%;
+      height: 35%;
       padding: 1rem;
     }
   }
@@ -66,15 +66,15 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
     section {
       font-size: 73%;
-      height: 20%;
+      height: 30%;
       top: 70%;
     }
   }
   @media only screen and (max-width: 700px) {
     section {
       font-size: 70%;
-      height: 24%;
-      width: 50%;
+      height: 30%;
+      width: 60%;
       top: 70%;
     }
   }
@@ -88,11 +88,12 @@ const Wrapper = styled.div`
     section {
       font-size: 65%;
       width: 50%;
+      left: 20%;
     }
     @media only screen and (max-width: 560px) {
       section {
         font-size: 60%;
-        width: 50%;
+        width: 60%;
         height: 20%;
       }
     }
