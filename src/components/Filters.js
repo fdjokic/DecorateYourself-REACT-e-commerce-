@@ -84,11 +84,13 @@ const Filters = () => {
   );
 };
 const Wrapper = styled.div`
+  color: white;
   width: 20rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   div {
     display: flex;
     flex-direction: column;
@@ -104,12 +106,15 @@ const Wrapper = styled.div`
     gap: 1rem;
     position: fixed;
     width: 20rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 15px;
   }
   .clear-filters {
-    background-color: black;
     padding: 0.3rem;
     border: none;
-    color: white;
+    color: black;
+    font-weight: bold;
     border-radius: 5px;
   }
   .text-input {
