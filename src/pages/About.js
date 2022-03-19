@@ -101,6 +101,7 @@ const Wrapper = styled.div`
   @media only screen and (max-height: 560px) {
     section {
       height: 30%;
+      padding: 0.5rem;
     }
   }
   @media only screen and (max-height: 300px) {
