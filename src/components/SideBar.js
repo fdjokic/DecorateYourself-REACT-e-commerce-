@@ -68,13 +68,13 @@ const Wrapper = styled.div`
       z-index: -1;
       background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
       color: white;
-      transform: translateY(100%);
-      transition: 0.8s;
+      transform: translateY(-100%);
+      transition: 0.3s;
     }
     .active {
       transform: translateY(0);
       z-index: 999;
-      transition: 0.8s;
+      transition: 0.3s;
     }
     h5 {
       font-size: 1.3rem;
