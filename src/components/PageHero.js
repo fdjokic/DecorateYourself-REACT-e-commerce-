@@ -45,5 +45,8 @@ const Wrapper = styled.div`
       margin-left: 2rem;
     }
   }
+  @media only screen and (max-width: 692px) {
+    font-size: 0.7rem;
+  }
 `;
 export default PageHero;
