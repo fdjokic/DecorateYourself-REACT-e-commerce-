@@ -101,10 +101,6 @@ const Wrapper = styled.div`
       width: 100%;
     }
   }
-  @media only screen and (max-width: 1200px) {
-  }
-  @media only screen and (max-width: 992px) {
-  }
   @media only screen and (max-width: 768px) {
     img {
       width: 90%;

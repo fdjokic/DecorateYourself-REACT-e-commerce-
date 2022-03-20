@@ -66,7 +66,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
     section {
       font-size: 73%;
-      height: 30%;
+      height: 25%;
       top: 70%;
     }
   }
