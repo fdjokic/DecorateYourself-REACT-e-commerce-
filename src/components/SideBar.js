@@ -33,7 +33,11 @@ const SideBar = () => {
           })}
           <div className="icons">
             <BiUserPlus className="icon" />
-            <Link to="/cart" style={{ textDecoration: "none" }}>
+            <Link
+              to="/cart"
+              style={{ textDecoration: "none" }}
+              onClick={closeSideBar}
+            >
               <BsCart4 className="icon" />
             </Link>
           </div>
@@ -92,6 +96,7 @@ const Wrapper = styled.div`
       text-decoration: none;
       text-transform: capitalize;
       transition: 0.2s;
+      font-size: 1.5rem;
       color: white;
     }
     .link:hover {
