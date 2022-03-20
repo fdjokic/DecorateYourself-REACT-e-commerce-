@@ -177,6 +177,9 @@ const Wrapper = styled.div`
     .container {
       width: 100%;
     }
+    .amount {
+      font-size: 1rem;
+    }
   }
   @media only screen and (max-height: 520px) {
     .items {
