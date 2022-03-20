@@ -175,5 +175,13 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
     height: 90vh;
   }
+  @media only screen and (max-height: 520px) {
+    .items {
+      height: 30%;
+    }
+    .cart-totals {
+      height: 7rem;
+    }
+  }
 `;
 export default Cart;
