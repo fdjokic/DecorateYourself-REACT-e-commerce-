@@ -35,7 +35,7 @@ const Cart = () => {
         <div className="cart-totals">
           <div className="subtotal">
             <h4>Subtotal :</h4>
-            <p>${total_amount}</p>
+            <p>${total_amount.toFixed(2)}</p>
           </div>
           <div className="shipping">
             <h4>Shipping Fee:</h4>
@@ -43,7 +43,7 @@ const Cart = () => {
           </div>
           <div className="total">
             <h3>Order Total:</h3>
-            <p>${shipping_fee + total_amount}</p>
+            <p>${(shipping_fee + total_amount).toFixed(2)}</p>
           </div>
         </div>
       )}
@@ -53,8 +53,10 @@ const Cart = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 
   .cart-totals {
     border-radius: 5px;
@@ -66,6 +68,7 @@ const Wrapper = styled.div`
     width: 30rem;
     border: 2px solid grey;
     height: fit-content;
+    margin: 2rem;
   }
   .subtotal {
     display: flex;
@@ -85,14 +88,15 @@ const Wrapper = styled.div`
     padding: 1rem;
     font-size: 1rem;
     margin-top: 2rem;
-    width: 38rem;
+    width: 80vw;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    height: 70vh;
+    max-height: 70vh;
+    min-height: fit-content;
   }
   .items::-webkit-scrollbar {
     background-color: white;
@@ -111,8 +115,9 @@ const Wrapper = styled.div`
     height: 5rem;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
-    width: 33rem;
+    margin: 2rem auto;
+    width: 70vw;
+    max-width: 100%;
   }
   .amount {
     font-size: 1.5rem;
@@ -161,14 +166,11 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 992px) {
     height: fit-content;
+    .items {
+      width: 90%;
+    }
 
     display: block;
-    .links {
-      display: none;
-    }
-    .svg {
-      display: block;
-    }
   }
   @media only screen and (max-width: 768px) {
     height: 90vh;
