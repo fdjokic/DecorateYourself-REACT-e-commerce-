@@ -39,10 +39,12 @@ const AddToCart = ({ product }) => {
           <AiOutlinePlus />
         </button>
       </div>
-      <Link to="/cart" className="add">
-        <button onClick={() => addToCart(id, amount, product)}>
-          Add To Cart
-        </button>
+      <Link
+        to="/cart"
+        className="add"
+        onClick={() => addToCart(id, amount, product)}
+      >
+        <button>Add To Cart</button>
       </Link>
     </Wrapper>
   );
