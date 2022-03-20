@@ -6,6 +6,28 @@ import { BsCart4 } from "react-icons/bs";
 import { BiUserPlus } from "react-icons/bi";
 import { useGlobalContext } from "../context/context";
 import { useCartContext } from "../context/cartContext";
+import { motion } from "framer-motion";
+
+const svgVariants = {
+  initial: {
+    rotate: -100,
+  },
+  animate: {
+    rotate: 0,
+    transition: { duration: 1 },
+  },
+};
+const pathVariants = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 0.5,
+    transition: { duration: 1.5, ease: "easeInOut" },
+  },
+};
 
 const NavBar = () => {
   const { openSidebar } = useGlobalContext();
@@ -22,15 +44,23 @@ const NavBar = () => {
             );
           })}
         </div>
-        <svg
+        <motion.svg
+          variants={svgVariants}
+          animate="animate"
+          initial="initial"
           className="svg"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           onClick={openSidebar}
         >
-          <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
-        </svg>
+          <motion.path
+            variants={pathVariants}
+            initial="hidden"
+            animate="visible"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+          ></motion.path>
+        </motion.svg>
         <Link to="/" className="heading-2">
           <h2>Decorate Yourself</h2>
         </Link>

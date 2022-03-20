@@ -185,8 +185,17 @@ const Wrapper = styled.div`
     .items {
       height: 30%;
     }
+
     .cart-totals {
       height: 7rem;
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    .container {
+      img {
+        height: 50%;
+      }
+      font-size: 0.7rem;
     }
   }
 `;

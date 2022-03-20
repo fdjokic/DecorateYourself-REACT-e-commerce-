@@ -107,5 +107,10 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 768px) {
   }
+  @media only screen and (max-width: 520px) {
+    img {
+      width: 90%;
+    }
+  }
 `;
 export default SingleProduct;

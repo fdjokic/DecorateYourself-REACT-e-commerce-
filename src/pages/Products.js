@@ -6,7 +6,7 @@ import Filters from "../components/Filters";
 import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
 import { useFilterContext } from "../context/filterContext";
-import { motion, LazyMotion, domAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import PageHero from "../components/PageHero";
 import { GiClick } from "react-icons/gi";
 
@@ -20,6 +20,9 @@ const productsVariants = {
   },
   exit: {
     opacity: 0,
+    transition: {
+      duration: 0.5,
+    },
   },
 };
 
@@ -35,24 +38,23 @@ const Products = () => {
       <PageHero title="Products" />
       <section className="filters-products">
         <Filters />
-        <LazyMotion features={domAnimation}>
-          <motion.section
-            layout
-            className="products"
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            {filtered_products.map((product) => {
-              const { id } = product;
-              return (
-                <Link to={`/product/${id}`} className="link" key={id}>
-                  <GiClick className="click-hover" />
-                  <Product key={id} product={product} />
-                </Link>
-              );
-            })}
-          </motion.section>
-        </LazyMotion>
+        <motion.section
+          className="products"
+          variants={productsVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+        >
+          {filtered_products.map((product) => {
+            const { id } = product;
+            return (
+              <Link to={`/product/${id}`} className="link" key={id}>
+                <GiClick className="click-hover" />
+                <Product key={id} product={product} />
+              </Link>
+            );
+          })}
+        </motion.section>
       </section>
     </Wrapper>
   );
