@@ -22,7 +22,7 @@ const Cart = () => {
             return (
               <div key={id} className="container">
                 <img src={image} alt={name} />
-                <h4>{name.slice(0, 30)}...</h4>
+                <h4>{name.slice(0, 20)}...</h4>
                 <p className="amount">{amount}</p>
                 <span className="price">${price}</span>
                 <AiOutlineDelete onClick={() => removeItem(id)} />
@@ -174,6 +174,9 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 768px) {
     height: 90vh;
+    .container {
+      width: 100%;
+    }
   }
   @media only screen and (max-height: 520px) {
     .items {

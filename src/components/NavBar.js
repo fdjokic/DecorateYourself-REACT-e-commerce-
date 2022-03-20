@@ -72,7 +72,6 @@ const Wrapper = styled.nav`
     top: -20%;
     right: -50%;
     padding: 0.2rem;
-    height: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,13 +123,11 @@ const Wrapper = styled.nav`
   @media only screen and (max-width: 1200px) {
   }
   @media only screen and (max-width: 992px) {
-    .underline {
-      border: 0.7px solid black;
-    }
     .nav-text {
       justify-content: space-around;
       width: 100%;
     }
+
     .links {
       display: none;
     }
@@ -151,6 +148,26 @@ const Wrapper = styled.nav`
     }
     .svg {
       display: block;
+    }
+  }
+  @media only screen and (max-width: 653px) {
+    .heading-2 {
+      font-size: 1rem;
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+    .icon {
+      font-size: 1rem;
+    }
+    .svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .amount {
+      width: 0.5rem;
+      height: 0.5rem;
+      font-size: 0.5rem;
     }
   }
 `;
