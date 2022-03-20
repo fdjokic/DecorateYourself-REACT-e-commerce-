@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <Wrapper>
       <h6>
-        &copy; {new Date().getFullYear()} <span>Decorate Yourself</span> All
-        Rights Reserved
+        <span>&copy;</span> {new Date().getFullYear()}{" "}
+        <span>Decorate Yourself</span> All Rights Reserved
       </h6>
     </Wrapper>
   );
