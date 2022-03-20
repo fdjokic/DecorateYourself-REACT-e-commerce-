@@ -152,12 +152,10 @@ const Wrapper = styled.div`
       .container {
         width: 95%;
         width: 100vw;
+        margin: 1rem;
       }
       img {
         height: 70%;
-      }
-      .container {
-        margin: 1rem;
       }
     }
     .cart-totals {
@@ -169,6 +167,7 @@ const Wrapper = styled.div`
     height: fit-content;
     .items {
       width: 90%;
+      margin: 1rem 0;
     }
 
     display: block;
