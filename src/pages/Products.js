@@ -27,8 +27,8 @@ const productsVariants = {
 };
 
 const Products = () => {
-  const { products, product_loading } = useGlobalContext();
-  const { filtered_products } = useFilterContext();
+  const { product_loading } = useGlobalContext();
+  const { filtered_products, clearFilters } = useFilterContext();
 
   if (product_loading) {
     return <Loading />;
@@ -52,7 +52,12 @@ const Products = () => {
             {filtered_products.map((product) => {
               const { id } = product;
               return (
-                <Link to={`/product/${id}`} className="link" key={id}>
+                <Link
+                  to={`/product/${id}`}
+                  className="link"
+                  key={id}
+                  onClick={clearFilters}
+                >
                   <GiClick className="click-hover" />
                   <Product key={id} product={product} />
                 </Link>

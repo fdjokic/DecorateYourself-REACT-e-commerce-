@@ -223,5 +223,13 @@ const Wrapper = styled.div`
       left: 40%;
     }
   }
+  @media only screen and (max-width: 280px) {
+    .text-and-button {
+      left: -140%;
+    }
+    .text-grey {
+      width: 12rem;
+    }
+  }
 `;
 export default Home;
