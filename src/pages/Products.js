@@ -107,5 +107,10 @@ const Wrapper = styled.div`
     transition: 0.3s;
     opacity: 0.8;
   }
+  @media only screen and (max-width: 843px) {
+    .products {
+      width: 90vw;
+    }
+  }
 `;
 export default Products;
