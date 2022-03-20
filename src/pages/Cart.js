@@ -180,6 +180,15 @@ const Wrapper = styled.div`
     .amount {
       font-size: 1rem;
     }
+    .empty-cart {
+      h2 {
+        font-size: 1rem;
+      }
+      .link {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
   }
   @media only screen and (max-height: 520px) {
     .items {

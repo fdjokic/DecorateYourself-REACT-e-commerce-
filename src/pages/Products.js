@@ -38,23 +38,28 @@ const Products = () => {
       <PageHero title="Products" />
       <section className="filters-products">
         <Filters />
-        <motion.section
-          className="products"
-          variants={productsVariants}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-        >
-          {filtered_products.map((product) => {
-            const { id } = product;
-            return (
-              <Link to={`/product/${id}`} className="link" key={id}>
-                <GiClick className="click-hover" />
-                <Product key={id} product={product} />
-              </Link>
-            );
-          })}
-        </motion.section>
+        {
+          <motion.section
+            className="products"
+            variants={productsVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            {filtered_products.length < 1 && (
+              <h2 className="no-products-msg">No Products Found.</h2>
+            )}
+            {filtered_products.map((product) => {
+              const { id } = product;
+              return (
+                <Link to={`/product/${id}`} className="link" key={id}>
+                  <GiClick className="click-hover" />
+                  <Product key={id} product={product} />
+                </Link>
+              );
+            })}
+          </motion.section>
+        }
       </section>
     </Wrapper>
   );
@@ -109,9 +114,17 @@ const Wrapper = styled.div`
     transition: 0.3s;
     opacity: 0.8;
   }
+  .no-products-msg {
+    display: flex;
+    align-items: center;
+  }
   @media only screen and (max-width: 843px) {
     .products {
       width: 90vw;
+    }
+    .no-products-msg {
+      display: block;
+      margin-top: 4rem;
     }
   }
 `;
