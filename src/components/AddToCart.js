@@ -81,6 +81,7 @@ const Wrapper = styled.div`
       background-color: transparent;
       color: white;
       border: none;
+      cursor: pointer;
     }
   }
 `;
