@@ -150,7 +150,7 @@ const Wrapper = styled.nav`
       display: block;
     }
   }
-  @media only screen and (max-width: 653px) {
+  @media only screen and (max-width: 280px) {
     .heading-2 {
       font-size: 1rem;
       h2 {
