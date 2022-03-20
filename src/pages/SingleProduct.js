@@ -95,6 +95,7 @@ const Wrapper = styled.div`
       padding: 1.5rem;
     }
   }
+
   @media only screen and (max-width: 1450px) {
     .content-container {
       width: 100%;

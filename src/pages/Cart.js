@@ -151,6 +151,7 @@ const Wrapper = styled.div`
       font-size: 0.8rem;
       .container {
         width: 95%;
+        width: 100vw;
       }
       img {
         height: 70%;

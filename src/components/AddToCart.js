@@ -39,8 +39,8 @@ const AddToCart = ({ product }) => {
           <AiOutlinePlus />
         </button>
       </div>
-      <Link to="/cart">
-        <button className="add" onClick={() => addToCart(id, amount, product)}>
+      <Link to="/cart" className="add">
+        <button onClick={() => addToCart(id, amount, product)}>
           Add To Cart
         </button>
       </Link>
@@ -68,7 +68,6 @@ const Wrapper = styled.div`
     font-weight: bold;
   }
   .add {
-    border: none;
     color: white;
     padding: 0.5rem;
     cursor: pointer;
@@ -76,6 +75,11 @@ const Wrapper = styled.div`
     border-radius: 10px;
     background: black;
     margin: 1rem 0;
+    button {
+      background-color: transparent;
+      color: white;
+      border: none;
+    }
   }
 `;
 export default AddToCart;
